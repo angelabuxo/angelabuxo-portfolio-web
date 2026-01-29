@@ -1,24 +1,23 @@
-function initAboutMeView() {
-  console.log("Showing About Me section");
+function showView(viewId) {
+  const views = document.querySelectorAll('.view');
+  views.forEach(view => {
+    view.classList.remove('is-active');
+  });
+  const target = document.getElementById(viewId);
+  if (target) {
+    target.classList.add('is-active');
+  }
 }
-function initStudiesView() {
-  console.log("Showing Studies section");
-}
-function initLangSkillsView() {
-  console.log("Showing Languages and Skills section");
-}
-function initWorkExpView() {
-  console.log("Showing Work Experience section");
-}
-function initProjectsView() {
-  console.log("Showing Personal Projects section");
-}
-function initContactMeView() {
-  console.log("Showing Contact section");
-}
-document.getElementById('btn-aboutMe').addEventListener('click', initAboutMeView);
-document.getElementById('btn-studies').addEventListener('click', initStudiesView);
-document.getElementById('btn-langSkills').addEventListener('click', initLangSkillsView);
-document.getElementById('btn-workExp').addEventListener('click', initWorkExpView);
-document.getElementById('btn-projects').addEventListener('click', initProjectsView);
-document.getElementById('btn-contactMe').addEventListener('click', initContactMeView);
+
+document.getElementById('btn-aboutMe').addEventListener('click', () => showView('ViewAboutMe'));
+document.getElementById('btn-studies').addEventListener('click', () => showView('ViewStudies'));
+document.getElementById('btn-langSkills').addEventListener('click', () => showView('ViewLangSkills'));
+document.getElementById('btn-workExp').addEventListener('click', () => showView('ViewWorkExp'));
+document.getElementById('btn-projects').addEventListener('click', () => showView('ViewProjects'));
+document.getElementById('btn-contactMe').addEventListener('click', () => showView('ViewContactMe'));
+const backButtons = document.querySelectorAll('.back-button');
+backButtons.forEach(button => {
+  button.addEventListener('click', () => showView('ViewMainMenu'));
+});
+
+showView('ViewMainMenu');

@@ -7,19 +7,110 @@
 </head>
 
 <body>
-  <header>
-    <h1>Àngela Buxó López</h1>
-    <h2>Computer Science Student</h2>
-  </header>
+  <section id="ViewMainMenu" class="view">
+    <header>
+      <h1>Àngela Buxó López</h1>
+      <h2>Computer Science Student</h2>
+    </header>
 
-  <nav class="menu">
-    <button class="menu-button" id="btn-aboutMe">About Me</button>
-    <button class="menu-button" id="btn-studies">Studies</button>
-    <button class="menu-button" id="btn-langSkills">Languages and Skills</button>
-    <button class="menu-button" id="btn-workExp">Work Experience</button>
-    <button class="menu-button" id="btn-projects">Personal Projects</button>
-    <button class="menu-button" id="btn-contactMe">Contact Me</button>
-  </nav>
+    <nav class="menu" id="MainMenu">
+      <button class="menu-button" id="btn-aboutMe">About Me</button>
+      <button class="menu-button" id="btn-studies">Studies</button>
+      <button class="menu-button" id="btn-langSkills">Languages and Skills</button>
+      <button class="menu-button" id="btn-workExp">Work Experience</button>
+      <button class="menu-button" id="btn-projects">Personal Projects</button>
+      <button class="menu-button" id="btn-contactMe">Contact Me</button>
+    </nav>
+  </section>
+  <main>
+    <section id="ViewAboutMe" class="view">
+      <h1>About Me</h1>
+      <div>
+        <img id="myFoto" src="assets/images/fotoCara1.png">
+        <p>
+          My name is Àngela Buxó and I’m a third-year Computer Engineering student, currently specializing in Software Engineering.
+          Throughout my degree and through self-learning, I have been focusing on how to design, structure, and maintain quality software. I enjoy working with clean code, modular architectures, and applying good development practices such as code reusability, testing, and clear documentation. I consider myself organized, disciplined, and eager to keep growing both technically and personally.
+          I also have an interest in Artificial Intelligence, not seeing it as a threat, but as an opportunity to learn and work effectively with the tools it provides.
+          Looking forward to applying my skills in real-world projects and learning from others along the way.
+        </p>
+      </div>
+      <button class="back-button" id="btn-back">Back</button>
+    </section>
+    <section id="ViewStudies" class="view">
+      <h1>Studies</h1>
+      <div>
+        <p>
+        </p>
+      </div>
+      <button class="back-button" id="btn-back">Back</button>
+    </section>
+    <section id="ViewLangSkills" class="view">
+      <h1>Languages and Skills</h1>
+      <div class="skills-grid">
+        <div class="skills-card">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Java</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Spoken & Written Languages</h3>
+          <ul>
+            <li>Catalan: Native</li>
+            <li>Spanish: Native</li>
+            <li>English: Proficiency</li>
+            <li>French: Low level</li>
+          </ul>
+        </div>
+      </div>
+      <button class="back-button" id="btn-back">Back</button>
+    </section>
+    <section id="ViewWorkExp" class="view">
+      <h1>Work Experience</h1>
+      <div>
+
+      </div>
+      <button class="back-button" id="btn-back">Back</button>
+    </section>
+    <section id="ViewProjects" class="view">
+      <h1>Personal Projects</h1>
+      <div>
+
+      </div>
+      <button class="back-button" id="btn-back">Back</button>
+    </section>
+    <section id="ViewContactMe" class="view">
+      <h1>Contact Me</h1>
+      <div class="contact-list">
+        <div class="contact-item">
+          <img id="callLogo" class="logo" src="assets/images/call.jpg" alt="Phone">
+          <p>629 467 648</p>
+        </div>
+        <div class="contact-item">
+          <img id="instaLogo" class="logo" src="assets/images/insta.avif" alt="Instagram">
+          <a href="https://www.instagram.com/angelabuxo" target="_blank" rel="noopener">@angelabuxo</a>
+        </div>
+        <div class="contact-item">
+          <img id="linkedInLogo" class="logo" src="assets/images/ln.png" alt="LinkedIn">
+          <a href="https://www.linkedin.com/in/%C3%A0ngela-bux%C3%B3-l%C3%B3pez-642330373/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="contact-item">
+          <img id="mailLogo" class="logo" src="assets/images/mail.webp" alt="Email">
+          <a href="mailto:angela.buxo2@gmail.com">angela.buxo2@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <img id="ghLogo" class="logo" src="assets/images/gh.webp" alt="GitHub">
+          <a href="https://github.com/angelabuxo" target="_blank" rel="noopener">@angelabuxo</a>
+        </div>
+      </div>
+      <button class="back-button" id="btn-back">Back</button>
+    </section>
+  </main>
 
   <script src="js/main.js"></script>
 </body>

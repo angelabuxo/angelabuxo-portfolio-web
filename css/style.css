@@ -8,12 +8,14 @@ Eliminar estils per defecte del navegador
 }
 
 body {
-  background-color: antiquewhite;
-  color: sienna;
-  font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    color: sienna;
+    font-family: Arial, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
 }
 header {
-    margin-top: 5%;
     font-family: 'Arial Narrow Bold';
     text-align: center;
 }
@@ -22,16 +24,18 @@ header h1 {
 }
 
 header h2 {
-    margin-top: 2%;
     font-size: 30px;
     font-weight: normal;
 }
 .menu {
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+}
+.menu.is-hidden {
+    display: none;
 }
 .menu-button {
     font-family: 'Arial Narrow Bold';
@@ -40,4 +44,117 @@ header h2 {
     width: 700px;
     background-color: rgb(218, 133, 94);
     font-size: 20px;
+}
+.view {
+    display: none;
+}
+.is-active {
+    display: block;
+}
+.view div{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 20px;
+}
+.view img {
+    height: 400px;
+}
+.view p {
+    color: black;
+}
+#ViewAboutMe div {
+    align-items: flex-start;
+}
+#ViewAboutMe img {
+    border: 6px solid rgba(160, 82, 45, 0.35);
+    border-radius: 16px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+#ViewAboutMe p {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(160, 82, 45, 0.2);
+    border-radius: 12px;
+    padding: 18px 20px;
+    line-height: 1.6;
+}
+main section h1{
+    margin-top: 5%;
+    font-family: 'Arial Narrow Bold';
+    text-align: center;
+    font-size: 50px;
+}
+.back-button {
+    font-family: 'Arial Narrow Bold';
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(218, 133, 94);
+    font-size: 20px;
+}
+.view .contact-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 20px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(160, 82, 45, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.contact-item p,
+.contact-item a {
+    color: #3b2416;
+    text-decoration: none;
+    font-size: 16px;
+    word-break: break-word;
+}
+.contact-item a:hover {
+    text-decoration: underline;
+}
+.view .logo {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.view .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 20px;
+}
+.view .skills-card {
+    display: flex;
+    flex-direction: column;
+}
+.skills-card {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(160, 82, 45, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.skills-card h3 {
+    font-size: 22px;
+    color: #3b2416;
+}
+.skills-card ul {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    gap: 8px;
+}
+.skills-card li {
+    color: #3b2416;
+    font-size: 16px;
 }
