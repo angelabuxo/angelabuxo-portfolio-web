@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: antiquewhite;
-    color: sienna;
+    background-color: #F5E6D3;
+    color: #8B1538;
     font-family: Arial, sans-serif;
     margin-left: 5%;
     margin-right: 5%;
@@ -47,7 +47,15 @@ header h2 {
     font-size: 20px;
     height: 70px;
     width: 700px;
-    background-color: rgb(218, 133, 94);
+    background-color: #A0353A;
+    color: #F5E6D3;
+    border: 2px solid #722F37;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #8B1538;
 }
 
 /* ===== VISTES (SECCIONS) ===== */
@@ -66,21 +74,36 @@ main section h1 {
     font-size: 50px;
 }
 
+main section h2 {
+    font-family: 'Arial Narrow Bold';
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
 /* ===== BOTÓ BACK ===== */
 .back-button {
     font-family: 'Arial Narrow Bold';
     font-size: 20px;
     height: 30px;
     width: 100px;
-    background-color:  rgb(218, 133, 94);
+    background-color: #A0353A;
+    color: #F5E6D3;
+    border: 2px solid #722F37;
+    cursor: pointer;
     position: fixed;
     bottom: 20px;
     left: 20px;
 }
 
+.back-button:hover {
+    background-color: #8B1538;
+}
+
 /* ===== ABOUT ME ===== */
 #ViewAboutMe .about-content {
-    margin-top: 3%;
+    margin-top: 1%;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -97,25 +120,24 @@ main section h1 {
 }
 
 #ViewAboutMe #myFoto {
-    height: 400px;
-    width: auto;
-    flex-shrink: 0;
-    border: 6px solid rgba(160, 82, 45, 0.35);
+    max-width:  450px;
+    max-height: auto;
+    border: 6px solid rgba(139, 21, 56, 0.4);
     border-radius: 16px;
     padding: 6px;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    background: rgba(245, 230, 211, 0.6);
+    box-shadow: 0 6px 16px rgba(114, 47, 55, 0.15);
 }
 
 #ViewAboutMe p {
     font-size: 20px;
     color: black;
-    background: rgba(255, 255, 255, 0.7);
-    border: 2px solid rgba(160, 82, 45, 0.2);
+    background: rgba(245, 230, 211, 0.8);
+    border: 2px solid rgba(160, 53, 58, 0.3);
     border-radius: 12px;
     padding: 18px 20px;
     line-height: 1.6;
-    flex: 1;
+    text-align: justify;
 }
 
 #ViewAboutMe .about-cards {
@@ -129,10 +151,10 @@ main section h1 {
 #ViewAboutMe .about-card {
     text-align: center;
     padding: 16px 12px;
-    background: rgba(255, 255, 255, 0.6);
-    border: 2px solid rgba(160, 82, 45, 0.2);
+    background: rgba(245, 230, 211, 0.7);
+    border: 2px solid rgba(160, 53, 58, 0.3);
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(114, 47, 55, 0.1);
     font-size: 20px;
     color: black;
 }
@@ -167,15 +189,15 @@ main section h1 {
     align-items: center;
     gap: 1rem;
     padding: 16px;
-    background: rgba(255, 255, 255, 0.6);
-    border: 2px solid rgba(160, 82, 45, 0.2);
+    background: rgba(245, 230, 211, 0.7);
+    border: 2px solid rgba(160, 53, 58, 0.3);
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(114, 47, 55, 0.1);
 }
 
 .contact-item p,
 .contact-item a {
-    color: #3b2416;
+    color: black;
     text-decoration: none;
     font-size: 16px;
     word-break: break-word;
@@ -195,25 +217,29 @@ main section h1 {
 /* ===== LANGUAGES AND SKILLS ===== */
 .view .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 1%;
     padding: 10px 20px 20px 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
 }
 
 .skills-card {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.6);
-    border: 2px solid rgba(160, 82, 45, 0.2);
+    background: rgba(245, 230, 211, 0.7);
+    border: 2px solid rgba(160, 53, 58, 0.3);
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(114, 47, 55, 0.1);
 }
 
 .skills-card h3 {
     font-size: 22px;
-    color: #3b2416;
+    color: #8B1538;
     margin-bottom: 10px;
 }
 
@@ -225,7 +251,7 @@ main section h1 {
 }
 
 .skills-card li {
-    color: #3b2416;
+    color: black;
     font-size: 16px;
 }
 
@@ -234,7 +260,7 @@ main section h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
-    margin-top: 1%;
+    margin-top: 0.3%;
     padding: 10px 20px 20px 20px;
     justify-items: center;
 }
@@ -245,10 +271,10 @@ main section h1 {
     align-items: center;
     gap: 2rem;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.6);
-    border: 2px solid rgba(160, 82, 45, 0.2);
+    background: rgba(245, 230, 211, 0.7);
+    border: 2px solid rgba(160, 53, 58, 0.3);
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(114, 47, 55, 0.1);
     width: 100%;
     height: 80%;
 }
@@ -268,31 +294,31 @@ main section h1 {
 
 .study-card h3 {
     font-size: 20px;
-    color: #3b2416;
+    color: #8B1538;
     margin-bottom: 5px;
 }
 
 .study-card h4 {
     font-size: 16px;
-    color: #5a3a2a;
+    color: #A0353A;
     margin-bottom: 5px;
 }
 
 .study-card h5 {
     font-size: 14px;
-    color: #7a5a4a;
+    color: #A0353A;
     margin-bottom: 8px;
 }
 
 .study-card h6 {
     margin-top: 3%;
     font-size: 14px;
-    color: #5a3a2a;
+    color: #A0353A;
     margin-bottom: 6px;
 }
 
 .study-card p {
-    color: #3b2416;
+    color: black;
     font-size: 14px;
 }
 
@@ -303,5 +329,5 @@ main section h1 {
 .study-card li {
     margin-top: 3%;
     font-size: 12px;
-    color: #7a5a4a;
+    color: black;
 }
